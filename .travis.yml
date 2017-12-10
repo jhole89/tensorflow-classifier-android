@@ -19,10 +19,10 @@ licenses:
   - 'android-sdk-license-.+'
 
 before_script:
-  - wget http://dl.google.com/android/ndk/android-ndk-r16b-linux-x86_64.bin -O
+  - wget http://dl.google.com/android/ndk/android-ndk-r16b-linux-x86_64.bin
   - chmod u+x android-ndk-r16b-linux-x86_64.bin
   - ./android-ndk-r16b-linux-x86_64.bin > /dev/null
-  - export ANDROID_NDK_HOME=`pwd`/android-ndk-r10e
+  - export ANDROID_NDK_HOME=`pwd`/android-ndk-r16b
   - export LOCAL_ANDROID_NDK_HOME="$ANDROID_NDK_HOME"
   - export LOCAL_ANDROID_NDK_HOST_PLATFORM="linux-x86_64"
   - export PATH=$PATH:${ANDROID_NDK_HOME}

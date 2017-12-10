@@ -1,8 +1,16 @@
-language: java
+language: android
 
 jdk:
   - oraclejdk8
   - oraclejdk9
+
+android:
+  components:
+    - tools
+    - platform-tools
+    - tools
+    - build-tools-27.0.1
+    - android-27
 
 script:
   — ./gradlew build jacocoTestReport

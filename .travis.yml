@@ -1,0 +1,19 @@
+language: java
+
+jdk:
+  - oraclejdk8
+  - oraclejdk9
+
+script:
+  — ./gradlew build jacocoTestReport
+
+matrix:
+  fast_finish: true
+  allow_failures:
+    - jdk: oraclejdk9
+
+notifications:
+  email: false
+
+after_success:
+  — bash <(curl -s https://codecov.io/bash)

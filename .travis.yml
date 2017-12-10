@@ -12,6 +12,10 @@ android:
     - build-tools-27.0.1
     - android-27
 
+licenses:
+  - android-sdk-preview-license-.+
+  - android-sdk-license-.+
+
 script: ./gradlew build jacocoTestReport
 
 matrix:

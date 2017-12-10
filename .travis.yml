@@ -12,8 +12,7 @@ android:
     - build-tools-27.0.1
     - android-27
 
-script:
-  — "./gradlew build jacocoTestReport"
+script: ./gradlew build jacocoTestReport
 
 matrix:
   fast_finish: true

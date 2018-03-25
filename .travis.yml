@@ -37,7 +37,10 @@ before_script:
   - export PATH=$PATH:${ANDROID_NDK_HOME}
   - env
 
-script: ./gradlew build jacocoTestReport
+script:
+  - ./gradlew build jacocoTestReport
+  - ./gradlew connectedCheck
+
 
 matrix:
   fast_finish: true

@@ -2,12 +2,12 @@ apply plugin: 'com.android.application'
 apply plugin: 'jacoco-android'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion '26.0.2'
+    compileSdkVersion 28
+    buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId 'org.tensorflow.demo'
         minSdkVersion 21
-        targetSdkVersion 26
+        targetSdkVersion 28
         versionCode 1
         versionName '1.0'
 
@@ -33,6 +33,6 @@ android {
 }
 
 dependencies {
-    compile 'org.tensorflow:tensorflow-android:1.4.0'
-    testCompile 'junit:junit:4.12'
+    implementation 'org.tensorflow:tensorflow-android:1.4.0'
+    testImplementation 'junit:junit:4.12'
 }

@@ -21,6 +21,14 @@ android {
         }
     }
 
+    buildTypes {
+        debug {
+            applicationIdSuffix '.debug'
+            versionNameSuffix '-debug'
+            testCoverageEnabled true
+        }
+    }
+
     externalNativeBuild {
         cmake {
             path "CMakeLists.txt"
